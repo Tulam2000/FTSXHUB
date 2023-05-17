@@ -270,7 +270,8 @@ local Properties = {
 		BackgroundTransparency = 1,
 		Image = "http://www.roblox.com/asset/?id=5554236805",
 		ScaleType = Enum.ScaleType.Slice,
-		SliceCenter = Rect.new(23,23,277,277),
+		Slic
+	Rect.new(23,23,277,277),
 		Size = UDim2.fromScale(1,1) + UDim2.fromOffset(30,30),
 		Position = UDim2.fromOffset(-15,-15)
 	},
@@ -404,7 +405,7 @@ local UICornerLoad = Instance.new("UICorner")
 local LoadButton = Instance.new("ImageButton")
 
 UILibrary.Name = "UILibrary"
-UILibrary.Parent = game:GetService("CoreGui")
+UILibrary.Parent = gameetService("CoreGui")
 UILibrary.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Load.Name = "Load"
@@ -443,7 +444,7 @@ LoadButton.AnchorPoint = Vector2.new(0.5, 0.5)
 LoadButton.Position = UDim2.new(0.5, 0, 0.5, 0)
 LoadButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoadButton.BackgroundTransparency = 1.000
-LoadButton.Size = UDim2.new(0, 70, 0, 70)
+LoadButton.Size = UDim2.n0, 70, 0, 70)
 LoadButton.Image = "http://www.roblox.com/asset/?id=10731738718"
 LoadButton.ImageTransparency = 1
 
@@ -519,7 +520,7 @@ local function MakeDraggable(topbarobject, object)
 	end
 
 	topbarobject.InputBegan:Connect(
-		function(input)
+		function(inpu)
 			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
 				Dragging = true
 				DragStart = input.Position
@@ -589,7 +590,7 @@ osday.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 osday.BackgroundTransparency = 1.000
 osday.Position = UDim2.new(0.5, 0, 0.699999988, 0)
 osday.Size = UDim2.new(0, 384, 0, 30)
-osday.Font = Enum.Font.GothamBold
+osday.Font = Enum.FoGothamBold
 osday.TextTransparency = 1
 osday.TextColor3 = Color3.fromRGB(255, 255, 255)
 osday.TextSize = 14.000
@@ -636,7 +637,7 @@ function LoadFunction()
 	TweenService:Create(
 		Load,
 		TweenInfo.new(.4, Enum.EasingStyle.Back, Enum.EasingDirection.InOut),
-		{Position = UDim2.new(0.5, 0, 0.5, 0)}
+		{Positi UDim2.new(0.5, 0, 0.5, 0)}
 	):Play()
 	TweenService:Create(
 		Load,
@@ -676,7 +677,7 @@ function LoadFunction()
 				TweenInfo.new(.2, Enum.EasingStyle.Back, Enum.EasingDirection.InOut),
 				{Rotation = 180}
 			):Play()
-			SoundClick:Play()
+			SoundCick:Play()
 			TweenService:Create(
 				LoadButton,
 				TweenInfo.new(.4, Enum.EasingStyle.Quart, Enum.EasingDirection.In),
@@ -824,7 +825,7 @@ function Library.new()
 	Scrollingbar.Active = true
 	Scrollingbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	Scrollingbar.BackgroundTransparency = 1
-	Scrollingbar.BorderSizePixel = 0
+	Scrollingbar.BorderSizPixel = 0
 	Scrollingbar.AnchorPoint = Vector2.new(0.5,0.5)
 	Scrollingbar.Position = UDim2.new(0.5, 0, 1.65, 0)
 	Scrollingbar.Size = UDim2.new(0, 500, 0, 0)
@@ -1140,7 +1141,8 @@ function Library.new()
 		ScrollingMainPage.BottomImage = ""
 		ScrollingMainPage.CanvasSize = UDim2.new(0, 0, 0, 515)
 		ScrollingMainPage.ScrollBarThickness = 0
-		ScrollingMainPage.TopImage = ""
+		ScrollingMainPage
+		.TopImage = ""
 		ScrollingMainPage.ClipsDescendants = true
 
 		local LoadScrollbarFocus = false
@@ -1315,7 +1317,7 @@ function Library.new()
 				PlayerInfoFrame.Parent = ScrollingPageFrame
 				PlayerInfoFrame.Active = true
 				PlayerInfoFrame.BackgroundColor3 = Color3.fromRGB(30,30,30)
-				PlayerInfoFrame.BorderSizePixel = 0
+			PlayerInfoFrame.BorderSizePixel = 0
 				PlayerInfoFrame.Size = UDim2.new(0, 475, 0, 300)
 
 				PlayerInfoFrameUICorner.Name = "PlayerInfoFrameUICorner"
